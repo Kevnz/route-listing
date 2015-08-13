@@ -1,6 +1,6 @@
 {
   "name": "route-listing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lists routes in an express app to the console",
   "main": "index.js",
   "scripts": {
