@@ -1,5 +1,5 @@
 'use strict';
-var Table require('cli-table');
+var Table = require('cli-table');
 
 export function routeListing (stack, root) {
     let table = new Table({ head: ['Verb', 'Path'] });
