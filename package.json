@@ -1,0 +1,28 @@
+{
+  "name": "route-listing",
+  "version": "1.0.0",
+  "description": "Lists routes in an express app to the console",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Kevnz/route-listing.git"
+  },
+  "keywords": [
+    "express",
+    "tools",
+    "debugging",
+    "console"
+  ],
+  "author": "Kevin Isom <kevin.isom@gmail.com>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/Kevnz/route-listing/issues"
+  },
+  "homepage": "https://github.com/Kevnz/route-listing#readme",
+  "dependencies": {
+    "cli-table": "^0.3.1"
+  }
+}
