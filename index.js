@@ -2,24 +2,24 @@
 var Table = require('cli-table');
 
 module.exports = function routeListing (stack, root) {
-    let table = new Table({ head: ['Verb', 'Path'] });
+    var table = new Table({ head: ['Verb', 'Path'] });
 
-    let routes = stack;
+    var routes = stack;
 
-    for (let key in routes) {
+    for (var key in routes) {
 
         if (routes.hasOwnProperty(key)) {
-            let val = routes[key];
+            var val = routes[key];
             //console.log(val);
             if(val.route) {
                 val = val.route;
-                let _o = {};
+                var _o = {};
                 _o[val.stack[0].method]  = [root + val.path];    
                 table.push(_o);
             }
             if(val.name && val.name === 'router') {
                 //console.log(val);
-                let prefix = val.regexp.toString()
+                var prefix = val.regexp.toString()
                     .replace('/^\\', '')
                     .replace('\\', '')
                     .replace('\\/', '')
